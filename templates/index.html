@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Voting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Welcome Voter: {{ voter_id }}</h2>
+
+    <div class="party" onclick="selectParty(this)">
+    <input type="radio" name="vote" value="tdp">
+    <img src="/static/images/tdp.png" alt="TDP">
+    <span>TDP</span>
+</div>
+
+<div class="party" onclick="selectParty(this)">
+    <input type="radio" name="vote" value="ycp">
+    <img src="/static/images/ycp.png" alt="YCP">
+    <span>YCP</span>
+</div>
+
+<div class="party" onclick="selectParty(this)">
+    <input type="radio" name="vote" value="bjp">
+    <img src="/static/images/bjp.png" alt="BJP">
+    <span>BJP</span>
+</div>
+
+<div class="party" onclick="selectParty(this)">
+    <input type="radio" name="vote" value="brs">
+    <img src="/static/images/brs.png" alt="BRS">
+    <span>BRS</span>
+</div>
+
+<div class="party" onclick="selectParty(this)">
+    <input type="radio" name="vote" value="congress">
+    <img src="/static/images/congress.png" alt="Congress">
+    <span>Congress</span>
+</div>
+
+<div class="party" onclick="selectParty(this)">
+    <input type="radio" name="vote" value="janasena">
+    <img src="/static/images/janasena.png" alt="Jana Sena">
+    <span>Jana Sena</span>
+</div>
+
+<div class="party" onclick="selectParty(this)">
+    <input type="radio" name="vote" value="nota">
+    <img src="/static/images/nota.png" alt="NOTA">
+    <span>NOTA</span>
+</div>
+
+
+    <button onclick="submitVote()">Submit Vote</button>
+    <p id="msg"></p>
+
+    
+    <a href="/logout">Logout</a>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
