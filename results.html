@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Election Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>📊 Election Results</h2>
+
+    <div class="result-row">
+        <img src="/static/images/tdp.png" alt="TDP">
+        <span>TDP</span>
+        <strong>{{ result["tdp"] }}</strong>
+    </div>
+
+    <div class="result-row">
+        <img src="/static/images/ycp.png" alt="YCP">
+        <span>YCP</span>
+        <strong>{{ result["ycp"] }}</strong>
+    </div>
+
+    <div class="result-row">
+        <img src="/static/images/bjp.png" alt="BJP">
+        <span>BJP</span>
+        <strong>{{ result["bjp"] }}</strong>
+    </div>
+
+    <div class="result-row">
+        <img src="/static/images/brs.png" alt="BRS">
+        <span>BRS</span>
+        <strong>{{ result["brs"] }}</strong>
+    </div>
+
+    <div class="result-row">
+        <img src="/static/images/congress.png" alt="Congress">
+        <span>Congress</span>
+        <strong>{{ result["congress"] }}</strong>
+    </div>
+
+    <div class="result-row">
+        <img src="/static/images/janasena.png" alt="Jana Sena">
+        <span>Jana Sena</span>
+        <strong>{{ result["janasena"] }}</strong>
+    </div>
+
+    <div class="result-row">
+        <img src="/static/images/nota.png" alt="NOTA">
+        <span>NOTA</span>
+        <strong>{{ result["nota"] }}</strong>
+    </div>
+
+    <br>
+    <a href="/">⬅ Back to Voting</a>
+</div>
+
+</body>
+</html>
+<br>
+<a href="/admin_logout">Logout Admin</a>
